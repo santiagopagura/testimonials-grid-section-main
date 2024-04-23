@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  background-color: hsl(210, 46%, 95%);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px;
+  row-gap: 24px;
+  column-gap: 30px;
+}
+main article {
+  padding: 24px 24px 32px 32px;
+  border-radius: 6px;
+  box-shadow: 96px 36px 48px -38px hsla(0, 0%, 0%, 0.1);
+}
+main article div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+main article div div {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+main article div img {
+  width: 28px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin-right: 28px;
+}
+main article div h1 {
+  font-size: 12px;
+  font-weight: 600;
+}
+main article div p {
+  font-size: 12px;
+  opacity: 0.5;
+  margin-bottom: 0;
+}
+main article p {
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.bold {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 1;
+  margin-bottom: 24px;
+}
+
+.daniel {
+  grid-area: daniel;
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 24px;
+}
+
+.jonathan {
+  grid-area: jonathan;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+
+.jeanette {
+  grid-area: jeanette;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.patrick {
+  grid-area: patrick;
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+}
+
+.kira {
+  grid-area: kira;
+  background-color: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    display: grid;
+    grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+    grid-template-columns: repeat(4, 1fr);
+    margin: 164px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
